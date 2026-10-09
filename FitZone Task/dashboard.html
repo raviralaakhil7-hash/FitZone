@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FitZone Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+body{
+    background:#111;
+    color:white;
+}
+
+.dashboard{
+    padding:120px 8%;
+}
+
+.dashboard h1{
+    margin-bottom:30px;
+    color:#ff3b3b;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.box{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(255,59,59,.5);
+}
+
+.box i{
+    font-size:45px;
+    color:#ff3b3b;
+    margin-bottom:15px;
+}
+
+.progress{
+    width:100%;
+    height:12px;
+    background:#333;
+    border-radius:20px;
+    margin-top:15px;
+}
+
+.progress div{
+    height:12px;
+    border-radius:20px;
+    background:#ff3b3b;
+}
+
+.logout{
+    display:inline-block;
+    margin-top:40px;
+    padding:15px 35px;
+    background:#ff3b3b;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.4s;
+}
+
+.logout:hover{
+    background:white;
+    color:#ff3b3b;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-dumbbell"></i>
+
+FitZone
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="#">Dashboard</a></li>
+
+</ul>
+
+</nav>
+
+<section class="dashboard">
+
+<h1>Welcome Back, Athlete 💪</h1>
+
+<div class="grid">
+
+<div class="box">
+
+<i class="fa-solid fa-fire"></i>
+
+<h2>Calories Burned</h2>
+
+<h3>650 kcal</h3>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-dumbbell"></i>
+
+<h2>Today's Workout</h2>
+
+<h3>Chest & Triceps</h3>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-glass-water"></i>
+
+<h2>Water Intake</h2>
+
+<h3>2.5 Liters</h3>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2>Workout Time</h2>
+
+<h3>75 Minutes</h3>
+
+</div>
+
+</div>
+
+<br><br>
+
+<h2>Weekly Progress</h2>
+
+<div class="box">
+
+<p>Workout Completion</p>
+
+<div class="progress">
+
+<div style="width:85%;"></div>
+
+</div>
+
+<br>
+
+<p>Weight Loss Goal</p>
+
+<div class="progress">
+
+<div style="width:65%;"></div>
+
+</div>
+
+<br>
+
+<p>Muscle Gain Goal</p>
+
+<div class="progress">
+
+<div style="width:72%;"></div>
+
+</div>
+
+</div>
+
+<a href="index.html" class="logout">
+
+Logout
+
+</a>
+
+</section>
+
+</body>
+</html>

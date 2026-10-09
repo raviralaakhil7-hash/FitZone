@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FitZone Login</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#111,#ff3b3b);
+}
+
+.login-box{
+
+    width:380px;
+    padding:40px;
+    background:rgba(255,255,255,.08);
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+
+}
+
+.login-box h1{
+
+    color:#fff;
+    margin-bottom:30px;
+
+}
+
+.input-box{
+
+    position:relative;
+    margin:20px 0;
+
+}
+
+.input-box input{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+
+}
+
+.input-box i{
+
+    position:absolute;
+    right:15px;
+    top:17px;
+    color:#555;
+
+}
+
+button{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#ff3b3b;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.4s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+p{
+
+    margin-top:20px;
+    color:white;
+
+}
+
+a{
+
+    color:#ffd700;
+    text-decoration:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1><i class="fa-solid fa-dumbbell"></i> FitZone</h1>
+
+<form id="loginForm">
+
+<div class="input-box">
+
+<input type="text" id="username" placeholder="Username" required>
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+<div class="input-box">
+
+<input type="password" id="password" placeholder="Password" required>
+
+<i class="fa-solid fa-lock"></i>
+
+</div>
+
+<button type="submit">
+
+Login
+
+</button>
+
+</form>
+
+<p>
+
+Don't have an account?
+
+<a href="#">Register</a>
+
+</p>
+
+</div>
+
+<script>
+
+document.getElementById("loginForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let user=document.getElementById("username").value;
+let pass=document.getElementById("password").value;
+
+if(user=="admin" && pass=="1234"){
+
+alert("Login Successful!");
+
+window.location.href="dashboard.html";
+
+}
+else{
+
+alert("Username : admin\nPassword : 1234");
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
